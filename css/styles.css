@@ -1,0 +1,291 @@
+
+body {
+	color:#969696;
+	font-size:16px;
+	overflow-x:hidden;
+	font-family: 'Cabin', sans-serif;
+}
+  
+  h1, h2, h3 {
+    font-family: "Dancing Script", cursive; 
+    color:rgb(184, 55, 55);
+    font-size:55px;
+}
+  
+  h4 {
+    color: white;
+    
+}
+h5{
+    color:whitesmoke;
+    font-size:25px;
+}
+
+.navbar{
+    background-color: rgb(158, 68, 68);
+    border-radius: 0 0 25px 25px ;
+}
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.banner-area {
+	position:relative;
+	padding-bottom:40px;
+}
+
+.home-wrapper {
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+#home {
+	height:100vh;
+}
+
+.home-content h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+.home-content h4{
+    font-size: 25px;
+}
+
+/* --- Background Image --- */
+.bg-image {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+	z-index:-1;
+}
+
+.bg-parallax {
+	background-attachment:fixed;
+}
+
+.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity: 0.7;
+	background-color:#000;
+}
+
+/* --- Buttons --- */
+.main-button {
+	display:inline-block;
+	padding:15px 30px;
+	border:none;
+	border-radius:40px;
+	background-color:rgb(163, 39, 39);
+	color:#FFF;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition:0.2s opacity;
+}
+.main-button:hover {
+	color:#FFF;
+	opacity:0.7;
+}
+
+/*--- Section --- */
+.section {
+	position: relative;
+	padding-top:80px;
+    padding-bottom:80px;
+    align-content: center;
+    
+}
+.section-header{
+    margin: auto;
+}
+
+.section-header .title {
+	font-family: 'Dancing Script', cursive;
+    align-content: center;
+
+}
+.section-header .sub-title {
+	font-weight:400;
+	color: #9c3232;
+}
+
+.title:after {
+	content:"";
+	display: block;
+	width: 10px;
+	height: 2px;
+	background-color: #99312d;
+	margin: 15px 0px 30px;
+}
+
+.text-center .title:after {
+	margin: 15px auto 30px;
+}
+
+.insideImg{
+    display:inline-block;
+    position: relative;
+    width: 100%;
+}
+.insideImg1{
+   display: inline-block;
+   position: relative;
+   width:100%;
+}
+#about{
+    align-items: center;
+}
+.modal-header {
+    background: rgba(21, 21, 21, 0.9);
+    color: black; }
+
+.modal-body{
+    padding: 30px 2% 30px;
+	background: rgba(21, 21, 21, 0.9);
+}
+
+.modal-title{
+    color: white;
+    margin-left: auto;
+    font-family: 'Dancing Script', cursive;
+    font-size:50px;
+    font-weight: 0;
+}
+.day, .hours{
+    font-size: 18px;
+    text-align: center;
+    color: black;
+}
+
+.secondbg{
+    height: 100%;
+}
+
+.crsl{
+    margin-top: 100px;
+}
+
+.carousel{
+    border: solid rgb(146, 38, 38);
+}
+
+.carousel-inner img{ 
+    height:500px; 
+ }
+ 
+ .contact-content {
+    text-align:center;
+}
+.contact {
+    background:#7f7f7f;
+    background:rgba(0,0,0,0.5);
+    padding-top:50px;
+    
+  }
+
+.list {
+    padding: 15px;
+   
+}
+
+  a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(184, 55, 55);
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: whitesmoke;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+#home1{
+    height: 100vh;
+}
+
+.phoneNum{
+    font-size: 15px;
+}
+.copyright{
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+}
+
+.menu-wrapper {
+	position: absolute;
+	top: 33%;
+    transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+.items-wrapper {
+	position: relative;
+	top: 45%;
+	left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.menubackground{
+    background-color: whitesmoke;
+    opacity: .8;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.backgroundMenu{
+    height: 160vh;
+}
+
+.menuContent{
+    font-size: 40px;
+    color: #99312d;
+    padding-top: 10px;
+    font-family: 'Cabin';
+}
+.menuButton{
+    background-color: #99312d;
+    color: bisque;
+
+}
+.copyrightMenu{
+    background-color: black;
+    opacity: .9;
+    text-align: center;
+    position: absolute;
+	top: 161%;
+    transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+
+.prices{
+    color: #99312d;
+    font-size: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color:rgb(236, 216, 191);
+    color: #99312d;
+}

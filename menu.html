@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:400,700%7CCabin:400%7CDancing+Script" rel="stylesheet">
+		
+
+
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/>
+	
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+    
+    <!-- Header -->
+		<header id="header" style="opacity: .9;">
+			<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+				<div class="container">
+					<a class="navbar-brand "href="index.html"><img class="logo img-fluid" src="imgBM/Cafe_Bubamara_Logo_.png" alt="logo"></a>
+					<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse ml-auto navbar-collapse" id="navbar">
+						<ul class="navbar-nav">
+							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#aboutus">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#gallery">Gallery</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.html#getInTouch">Contact</a></li>
+						</ul>
+						<div>
+							<div class="col-md-4 col-xl-2">
+								<span class="btn btn-md btn-dark text-nowrap" href="#reserveModal" role="button" id="reserveButton">Book a Table</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</nav>
+        </header>
+        <!-- Header -->
+        <!--reservemodal-->
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Make a reservation</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+								<label class="col-sm-6 col-form-label" for="guestName">Your name</label>
+								<div class="col"> 
+									<input class="form-control" type="text" id="guestName" placeholder="Your name...">
+								</div>
+                            </div>
+                            <div class="row form-group">
+								<label class="col-sm-6 col-form-label" for="guestNum">Your phone number</label>
+								<div class="col"> 
+									<input class="form-control" type="text" id="guestNum" placeholder="Your phone number...">
+								</div>
+							</div>
+							<div class="row form-group">
+								<label class="col-sm-6 col-form-label" for="numGuests">Number of guests</label>
+                                    <div class="col">
+                                <select class="form-control" name="" id="numGuests">
+                                    <option value="Select">Select...</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                                    </div>
+                            </div>
+                            <div class="row  form-group">
+                                <label class="col-sm-6 col-form-label" for="date" >Date</label>
+                                <div class="col">
+                                <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                                </div>
+							</div>
+							<div class="row form-group">
+							<label class="col-sm-6 col-form-label" for="time">Time</label>
+								<div class="col"> 
+									<input class="form-control" type="time" id="time" placeholder="">
+								</div>
+							</div>
+                            <div class="row form-group">
+                                
+                                    <button type="button" class="col-6 btn btn-lg btn-outline-danger ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button class=" col-6 btn btn-lg btn-outline-success" type="submit">Book Table</button>
+                               
+
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--reservemodal-->
+        <!--Menu page-->
+        <div id="home" class="banner-area">
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay backgroundMenu" style="background-image:url(imgBM/cafe-slider.jpg)"></div>
+			<!-- /Backgound Image -->
+
+			<div class="menu-wrapper">
+
+				<div class="col-md-12 col-md-offset-1 text-center">
+					<div class="home-content">
+						<h1 class="white-text">Our Menu</h1>
+					</div>
+				</div>
+
+            </div>
+            <!--menu-->
+            <div class="row form-group items-wrapper">
+               <div class="menubackground">
+            <ul class="nav nav-tabs" id="menuTab" role="tablist">
+                <li class="nav-item col-sm-12 col-md">
+                  <h5 class="nav-link active menuButton" id="breakfast-tab" data-toggle="tab" href="#breakfast" role="tab" aria-controls="breakfastmenu" aria-selected="true">Breakfast</h5>
+                </li>
+                <li class="nav-item col-sm-12 col-md">
+                  <h5 class="nav-link menuButton" id="lunch-tab" data-toggle="tab" href="#lunch" role="tab" aria-controls="lunchmenu" aria-selected="false">Lunch</h5>
+                </li>
+                <li class="nav-item col-sm-12 col-md">
+                  <h5 class="nav-link menuButton" id="dinner-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="dessertsmenu" aria-selected="false">Desserts</h5>
+                </li>
+                <li class="nav-item col-sm-12 col-md">
+                    <h5 class="nav-link menuButton" id="drinks-tab" data-toggle="tab" href="#drinks" role="tab" aria-controls="drinksmenu" aria-selected="false">Drinks</h5>
+                  </li>
+              </ul>
+              <div class="tab-content" id="tabContent">
+
+                <div class="tab-pane fade show active" id="breakfast" role="tabpanel" aria-labelledby="home-tab">
+                            <h3 class="menuContent">#01. Bubamara breakfast</h3>
+                            <p>Two eggs, feta cheese, mayo, tomato, sausage - (optional) chicken or beef & veal.</p>
+                            <span class="prices">$10</span>
+                            <h3 class="menuContent">#02. Breakfast wrap</h3>
+                            <p>Three scrambled egges with grilled chicken, spinach, tomatoes, hot peppers,<br>  mozzarella cheese folded into a wrap.</p>
+                            <span class="prices">$10</span>
+                            <h3 class="menuContent">#03. Breakfast waffle</h3>
+                            <p>Comes with two fried eggs and prosciutto.</p>
+                            <span class="prices">$10</span>
+                            <h3 class="menuContent">#04. Ham and cheese omelette</h3>
+                            <p>Classic omelette with ham and your choice of cheese.</p>
+                            <span class="prices">$10</span>
+                            <h3 class="menuContent">#05. Veggie omelette</h3>
+                            <p>Spinach, mushrooms, tomato, peppers, scallions, and your choice of cheese.</p>
+                            <span class="prices">$10</span>
+                </div>
+
+                <div class="tab-pane fade" id="lunch" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="menuContent">#01. Burek</h3>
+                    <p>Choice of Meat, Cheese, Spinach, Potato or Apple .</p>
+                    <span class="prices">$20</span>
+                    <h3 class="menuContent">#02. Cevape</h3>
+                    <p>Served with french fries, and choice of: ajvar, mayonnaise, crushed pepper, onions</p>
+                    <span class="prices">$20</span>
+                    <h3 class="menuContent">#03. Savory crepes</h3>
+                    <p>Grilled Chicken or Ham with mushrooms and cheese.</p>
+                    <span class="prices">$20</span>
+                    <h3 class="menuContent">#04. Pancerota</h3>
+                    <p>Choice of Ham or Beef proscuitto with mushrooms and cheese</p>
+                    <span class="prices">$20</span>
+                    <h3 class="menuContent">#05. Salads</h3>
+                    <p>Cucumber, tomato, feta cheese, red onion and parsley chopped fine <br> and drizzled with oil and vinegar. Choice of meat.</p>
+                    <span class="prices">$20</span>
+                </div>
+
+                <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="contact-tab">
+                    <h3 class="menuContent">#01. Tres leches</h3>
+                    <p>Cake dipped in 3 different milks.</p>
+                    <span class="prices">$5</span>
+                    <h3 class="menuContent">#02. Crepes</h3>
+                    <p>Traditional crepes with your choice of up to 3 toppings.</p>
+                    <span class="prices">$5</span>
+                    <h3 class="menuContent">#03. Spanish wind</h3>
+                    <p>egg white, chocolate cream, vanilla cream, chopped hazelnut.</p>
+                    <span class="prices">$5</span>
+                    <h3 class="menuContent">#04. Kremsnita</h3>
+                    <p>Dessert made of sheets of crispy puff pastry, filled with custard cream and berries.</p>
+                    <span class="prices">$5</span>
+                    <h3 class="menuContent">#05. Baklava</h3>
+                    <p>Walnuts, raisins, fillo.</p>
+                    <span class="prices">$5</span>
+                </div>
+
+                <div class="tab-pane fade" id="drinks" role="tabpanel" aria-labelledby="contact-tab">
+                            <h3 class="menuContent">#01. Freshly squeezed juice</h3>
+                            <p>Fresh Squeezed Orange or Grapefruit Juice in a Jar</p>
+                            <span class="prices">$4</span>
+                            <h3 class="menuContent">#02. Soda</h3>
+                            <p>Choice of Coca-Cola, Fanta, Sprite or Orange Soda</p>
+                            <span class="prices">$4</span>
+                            <h3 class="menuContent">#03. Red Bull</h3>
+                            <p>16oz can of Red Bull</p>
+                            <span class="prices">$4</span>
+                            <h3 class="menuContent">#04. Yogurt</h3>
+                            <p>Home made yogurt perfectly paired with Burek.</p>
+                            <span class="prices">$4</span>
+                            <h3 class="menuContent">#05. Water</h3>
+                            <p>20 oz bottle of regular or seltzer water.</p>
+                            <span class="prices">$4</span>
+                </div>
+
+              </div>
+            </div>
+        </div>
+        <!--/menu-->
+    </div>
+    <!--Menu page-->
+        <footer class="copyrightMenu">
+            <span>Copyright @2020 All rights reserved | Cafe Bubamara</span>
+        </footer>
+		<!-- jQuery Plugins -->
+		<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    	<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+		
+</body>
+</html>
